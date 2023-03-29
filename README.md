@@ -167,9 +167,9 @@ Martin Atkins
 
 # 2 Ознакомьтесь с графическим интерфейсом VirtualBox, посмотрите как выглядит виртуальная машина, которую создал для вас Vagrant, какие аппаратные ресурсы ей выделены. Какие ресурсы выделены по-умолчанию?
 
-![screenshot2](https://github.com/015fanatik/devops-netology/blob/main/Screenshot_2.jpg)
-![screenshot3](https://github.com/015fanatik/devops-netology/blob/main/Screenshot_3.jpg)
-![screenshot4](https://github.com/015fanatik/devops-netology/blob/main/Screenshot_4.jpg)
+![screenshot2](https://github.com/015fanatik/devops-netology/blob/main/screenshots/Screenshot_2.jpg)
+![screenshot3](https://github.com/015fanatik/devops-netology/blob/main/screenshots/Screenshot_3.jpg)
+![screenshot4](https://github.com/015fanatik/devops-netology/blob/main/screenshots/Screenshot_4.jpg)
 
 # 3 Ознакомьтесь с возможностями конфигурации VirtualBox через Vagrantfile: документация. Как добавить оперативной памяти или ресурсов процессора виртуальной машине?
 
@@ -185,12 +185,12 @@ end
 
 # 4 Команда vagrant ssh из директории, в которой содержится Vagrantfile, позволит вам оказаться внутри виртуальной машины без каких-либо дополнительных настроек. Попрактикуйтесь в выполнении обсуждаемых команд в терминале Ubuntu.
 
-![screenshot5](https://github.com/015fanatik/devops-netology/blob/main/Screenshot_5.jpg)
+![screenshot5](https://github.com/015fanatik/devops-netology/blob/main/screenshots/Screenshot_5.jpg)
 
 # 5 Ознакомьтесь с разделами man bash, почитайте о настройках самого bash:
 # какой переменной можно задать длину журнала history, и на какой строчке manual это описывается?
 
-![screenshot6](https://github.com/015fanatik/devops-netology/blob/main/Screenshot_6.jpg)
+![screenshot6](https://github.com/015fanatik/devops-netology/blob/main/screenshots/Screenshot_6.jpg)
 
 # что делает директива ignoreboth в bash?
 
@@ -204,7 +204,7 @@ ignoredups — не сохранять строки, совпадающие с �
 
 скобки {} -  применяется для создания составных комманд, указанных в man bash line 179
 
-![screenshot8](https://github.com/015fanatik/devops-netology/blob/main/Screenshot_8.jpg)
+![screenshot8](https://github.com/015fanatik/devops-netology/blob/main/screenshots/Screenshot_8.jpg)
 
 # 7 С учётом ответа на предыдущий вопрос, как создать однократным вызовом touch 100000 файлов? Получится ли аналогичным образом создать 300000? Если нет, то почему?
 
@@ -212,7 +212,7 @@ touch {1..100000}
 
 создать 300000 файлов без изменения переменной ARG_MAX (увеличить ограничение на объём передаваемых аргументов комманде) 
 
-![screenshot7](https://github.com/015fanatik/devops-netology/blob/main/Screenshot_7.jpg)
+![screenshot7](https://github.com/015fanatik/devops-netology/blob/main/screenshots/Screenshot_7.jpg)
 
 # 8 В man bash поищите по /\[\[. Что делает конструкция [[ -d /tmp ]]
 
@@ -469,7 +469,7 @@ tee - читает из стандартного ввода и записыва�
   
  chdir ("/tmp")
 
-![screenshot9](https://github.com/015fanatik/devops-netology/blob/main/Screenshot_9.jpg)
+![screenshot9](https://github.com/015fanatik/devops-netology/blob/main/screenshots/Screenshot_9.jpg)
   
   
 # 2 Попробуйте использовать команду file на объекты разных типов в файловой системе. Например:
@@ -501,11 +501,11 @@ vagrant@netology1:~$ file /bin/bash
   
   Найти файловый дескриптор нужного процесса и отправить в него "ничего"
   
-  ![screenshot10](https://github.com/015fanatik/devops-netology/blob/main/Screenshot_10.jpg) 
+  ![screenshot10](https://github.com/015fanatik/devops-netology/blob/main/screenshots/Screenshot_10.jpg) 
   
-  ![screenshot11](https://github.com/015fanatik/devops-netology/blob/main/Screenshot_11.jpg) 
+  ![screenshot11](https://github.com/015fanatik/devops-netology/blob/main/screenshots/Screenshot_11.jpg) 
   
-  ![screenshot12](https://github.com/015fanatik/devops-netology/blob/main/Screenshot_12.jpg) 
+  ![screenshot12](https://github.com/015fanatik/devops-netology/blob/main/screenshots/Screenshot_12.jpg) 
   
   
   
@@ -531,7 +531,7 @@ root@vagrant:~# dpkg -L bpfcc-tools | grep sbin/opensnoop
 
 # На какие файлы вы увидели вызовы группы open за первую секунду работы утилиты? Воспользуйтесь пакетом bpfcc-tools для Ubuntu 20.04. Дополнительные сведения по установке по ссылке.
 
-![screenshot13](https://github.com/015fanatik/devops-netology/blob/main/Screenshot_13.jpg) 
+![screenshot13](https://github.com/015fanatik/devops-netology/blob/main/screenshots/Screenshot_13.jpg) 
   
   
 # 6 Какой системный вызов использует uname -a? Приведите цитату из man по этому системному вызову, где описывается альтернативное местоположение в /proc и где можно узнать версию ядра и релиз ОС.
@@ -540,7 +540,7 @@ uname
   
 Part of the utsname information is also accessible via /proc/sys/kernel/{ostype, hostname, osrelease, version, domainname}.  
 
-![screenshot14](https://github.com/015fanatik/devops-netology/blob/main/Screenshot_14.jpg)
+![screenshot14](https://github.com/015fanatik/devops-netology/blob/main/screenshots/Screenshot_14.jpg)
   
   
   # 7 Чем отличается последовательность команд через ; и через && в bash? Например:
@@ -572,9 +572,9 @@ root@netology1:~#
  # 9 Используя -o stat для ps, определите, какой наиболее часто встречающийся статус у процессов в системе. В man ps изучите (/PROCESS STATE CODES), что значат дополнительные к основной заглавной букве статуса процессов. Его можно не учитывать при расчёте (считать S, Ss или Ssl равнозначными).
   
   
-  ![screenshot15](https://github.com/015fanatik/devops-netology/blob/main/Screenshot_15.png)
+  ![screenshot15](https://github.com/015fanatik/devops-netology/blob/main/screenshots/Screenshot_15.png)
   
-  ![screenshot16](https://github.com/015fanatik/devops-netology/blob/main/Screenshot_16.png)
+  ![screenshot16](https://github.com/015fanatik/devops-netology/blob/main/screenshots/Screenshot_16.png)
   
   
   
@@ -599,18 +599,18 @@ root@netology1:~#
 
 
 
-  ![unit.png](https://github.com/015fanatik/devops-netology/blob/main/unit.png) 
+  ![unit.png](https://github.com/015fanatik/devops-netology/blob/main/screenshots/unit.png) 
    
-  ![sysremctl.png](https://github.com/015fanatik/devops-netology/blob/main/sysremctl.png) 
+  ![sysremctl.png](https://github.com/015fanatik/devops-netology/blob/main/screenshots/sysremctl.png) 
    
-  ![status.png](https://github.com/015fanatik/devops-netology/blob/main/status.png)
+  ![status.png](https://github.com/015fanatik/devops-netology/blob/main/screenshots/status.png)
   
   
   # 2  Изучите опции node_exporter и вывод /metrics по умолчанию. Приведите несколько опций, которые вы бы выбрали для базового мониторинга хоста по CPU, памяти, диску и сети. 
    
-   ![metrics.png](https://github.com/015fanatik/devops-netology/blob/main/metrics.png)
+   ![metrics.png](https://github.com/015fanatik/devops-netology/blob/main/screenshots/metrics.png)
    
-   ![node_exporter.png](https://github.com/015fanatik/devops-netology/blob/main/node_exporter.png) 
+   ![node_exporter.png](https://github.com/015fanatik/devops-netology/blob/main/screenshots/node_exporter.png) 
   
   
   # 3 Установите в свою виртуальную машину Netdata. Воспользуйтесь готовыми пакетами для установки (sudo apt install -y netdata).
@@ -621,7 +621,7 @@ root@netology1:~#
 config.vm.network "forwarded_port", guest: 19999, host: 19999
 После успешной перезагрузки в браузере на своём ПК (не в виртуальной машине) вы должны суметь зайти на localhost:19999. Ознакомьтесь с метриками, которые по умолчанию собираются Netdata, и с комментариями, которые даны к этим метрикам.
   
-  ![netdata.png](https://github.com/015fanatik/devops-netology/blob/main/netdata.png)
+  ![netdata.png](https://github.com/015fanatik/devops-netology/blob/main/screenshots/netdata.png)
   
   
   
@@ -630,12 +630,12 @@ config.vm.network "forwarded_port", guest: 19999, host: 19999
   Да можно.
   
   
-  ![vbox.png](https://github.com/015fanatik/devops-netology/blob/main/vbox.png)
+  ![vbox.png](https://github.com/015fanatik/devops-netology/blob/main/screenshots/vbox.png)
   
   # 5 Как настроен sysctl fs.nr_open на системе по умолчанию? Определите, что означает этот параметр. Какой другой существующий лимит не позволит достичь такого числа (ulimit --help)?  
   
    
-  ![ulimit.png](https://github.com/015fanatik/devops-netology/blob/main/ulimit.png)
+  ![ulimit.png](https://github.com/015fanatik/devops-netology/blob/main/screenshots/ulimit.png)
   
   
   ulimit -a и ulimit -aH покажет текущие "мягкие" и (второй вызов) "жесткие" ограничения. При помощи ulimit можно открутить мягкие ограничения до пределов жестких. Следует понимать, что ulimit меняет только текущие лимиты, для шелла и всех программ, запущенных в этом шелле, поэтому после завершения сессии или даже в другом окне терминала значения останутся прежними.
@@ -648,22 +648,22 @@ config.vm.network "forwarded_port", guest: 19999, host: 19999
   
   # 6 апустите любой долгоживущий процесс (не ls, который отработает мгновенно, а, например, sleep 1h) в отдельном неймспейсе процессов; покажите, что ваш процесс работает под PID 1 через nsenter. Для простоты работайте в этом задании под root (sudo -i). Под обычным пользователем требуются дополнительные опции (--map-root-user) и т. д.
   
-  ![unshare.jpg](https://github.com/015fanatik/devops-netology/blob/main/unshare.jpg) 
+  ![unshare.jpg](https://github.com/015fanatik/devops-netology/blob/main/screenshots/unshare.jpg) 
   
-   ![nsenter.jpg](https://github.com/015fanatik/devops-netology/blob/main/nsenter.jpg)
+   ![nsenter.jpg](https://github.com/015fanatik/devops-netology/blob/main/screenshots/nsenter.jpg)
   
   
   # 7 Найдите информацию о том, что такое :(){ :|:& };:. Запустите эту команду в своей виртуальной машине Vagrant с Ubuntu 20.04 (это важно, поведение в других ОС не проверялось). Некоторое время всё будет плохо, после чего (спустя минуты) — ОС должна стабилизироваться. Вызов dmesg расскажет, какой механизм помог автоматической стабилизации. Как настроен этот механизм по умолчанию, и как изменить число процессов, которое можно создать в сессии?
 
   
-  ![fork_bomb1.png](https://github.com/015fanatik/devops-netology/blob/main/fork_bomb1.png) 
+  ![fork_bomb1.png](https://github.com/015fanatik/devops-netology/blob/main/screenshots/fork_bomb1.png) 
   
    
-  ![sb.png](https://github.com/015fanatik/devops-netology/blob/main/sb.png) 
+  ![sb.png](https://github.com/015fanatik/devops-netology/blob/main/screenshots/sb.png) 
    
-  ![fork_bomb2.png](https://github.com/015fanatik/devops-netology/blob/main/fork_bomb2.png)
+  ![fork_bomb2.png](https://github.com/015fanatik/devops-netology/blob/main/screenshots/fork_bomb2.png)
    
-  ![ssh.png](https://github.com/015fanatik/devops-netology/blob/main/ssh.png)
+  ![ssh.png](https://github.com/015fanatik/devops-netology/blob/main/screenshots/ssh.png)
   
   https://interface31.ru/tech_it/2022/09/linux---nachinayushhim-chto-takoe-oom-killer-i-kak-on-rabotaet.html 
   
@@ -691,7 +691,7 @@ HOST: stackoverflow.com
 В ответе укажите полученный HTTP-код и поясните, что он означает. 
 
    
- ![403.png](https://github.com/015fanatik/devops-netology/blob/main/403.png)   
+ ![403.png](https://github.com/015fanatik/devops-netology/blob/main/screenshots/403.png)   
  
  HTTP 403 Forbidden — стандартный код ответа HTTP, означающий, что доступ к запрошенному ресурсу запрещен. Сервер понял запрос, но не выполнит его.
    
@@ -707,18 +707,18 @@ HOST: stackoverflow.com
 приложите скриншот консоли браузера в ответ.  
 
 
-  ![f12.png](https://github.com/015fanatik/devops-netology/blob/main/f12.png) 
+  ![f12.png](https://github.com/015fanatik/devops-netology/blob/main/screenshots/f12.png) 
   
    
     
     
-  ![f12_2.png](https://github.com/015fanatik/devops-netology/blob/main/f12_2.png)
+  ![f12_2.png](https://github.com/015fanatik/devops-netology/blob/main/screenshots/f12_2.png)
    
    
   
 Шаг 3. Какой IP-адрес у вас в интернете?  
   
-  ![ip.png](https://github.com/015fanatik/devops-netology/blob/main/ip.png)
+  ![ip.png](https://github.com/015fanatik/devops-netology/blob/main/screenshots/ip.png)
   
 
 Шаг 4. Какому провайдеру принадлежит ваш IP-адрес? Какой автономной системе AS? Воспользуйтесь утилитой whois.
@@ -751,15 +751,15 @@ source:         RIPE
 
 Шаг 6. Повторите задание 5 в утилите mtr. На каком участке наибольшая задержка — delay?
   
-  ![mtr.png](https://github.com/015fanatik/devops-netology/blob/main/mtr.png)
+  ![mtr.png](https://github.com/015fanatik/devops-netology/blob/main/screenshots/mtr.png)
   
 
 Шаг 7. Какие DNS-сервера отвечают за доменное имя dns.google? Какие A-записи? Воспользуйтесь утилитой dig.
   
-  ![dig.png](https://github.com/015fanatik/devops-netology/blob/main/dig.png)
+  ![dig.png](https://github.com/015fanatik/devops-netology/blob/main/screenshots/dig.png)
 
 Шаг 8. Проверьте PTR записи для IP-адресов из задания 7. Какое доменное имя привязано к IP? Воспользуйтесь утилитой dig. 
     
   
-  ![dig2.png](https://github.com/015fanatik/devops-netology/blob/main/dig2.png)
+  ![dig2.png](https://github.com/015fanatik/devops-netology/blob/main/screenshots/dig2.png)
   
