@@ -163,7 +163,7 @@ Martin Atkins
 # Выполнение в этой директории vagrant up установит провайдер VirtualBox для Vagrant, скачает необходимый образ и запустит виртуальную машину.
 # vagrant suspend выключит виртуальную машину с сохранением ее состояния (т.е., при следующем vagrant up будут запущены все процессы внутри, которые работали на момент # вызова suspend), vagrant halt выключит виртуальную машину штатным образом.
 
-![screenshot1](https://github.com/015fanatik/devops-netology/blob/main/Screenshot_1.jpg)
+![screenshot1](https://github.com/015fanatik/devops-netology/blob/main/screenshots/Screenshot_1.jpg)
 
 # 2 Ознакомьтесь с графическим интерфейсом VirtualBox, посмотрите как выглядит виртуальная машина, которую создал для вас Vagrant, какие аппаратные ресурсы ей выделены. Какие ресурсы выделены по-умолчанию?
 
