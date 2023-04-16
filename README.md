@@ -14,7 +14,9 @@
 
 * [Компьютерные сети. Лекция 1](#компьютерные-сети-лекция1) 
 
-* [Компьютерные сети. Лекция 2](#компьютерные-сети-лекция2) 
+* [Компьютерные сети. Лекция 2](#компьютерные-сети-лекция2)  
+
+* [Компьютерные сети. Лекция 3](#компьютерные-сети-лекция3) 
     
      
       
@@ -952,7 +954,42 @@ Unused:
   
    Удалить конкретный адрес arp -d 192.168.5.254
   
-  Удалить полностью ip neigh flush all
+  Удалить полностью ip neigh flush all  
+  
+  
+  # Компьютерные сети. Лекция3  
+  
+  
+telnet route-views.routeviews.org  
+
+Username: rviews  
+
+show ip route x.x.x.x/32  
+
+show bgp x.x.x.x/32  
+
+~~~
+route-views>show ip route *.*.*.*
+Routing entry for *.*.*.*/22, supernet
+  Known via "bgp 6447", distance 20, metric 0
+  Tag 3303, type external
+  Last update from 217.192.89.50 2d04h ago
+  Routing Descriptor Blocks:
+  * 217.192.89.50, from 217.192.89.50, 2d04h ago
+      Route metric is 0, traffic share count is 1
+      AS Hops 2
+      Route tag 3303
+      MPLS label: none
+route-views>show bgp *.*.*.*
+BGP routing table entry for *.*.*.*/22, version 2784144856
+Paths: (21 available, best #21, table default)
+  Not advertised to any peer
+  Refresh Epoch 1
+  3267 35598 49120
+  ~~~
+  
+  
+  
   
   
   
