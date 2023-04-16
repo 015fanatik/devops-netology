@@ -1055,4 +1055,7 @@ Recv-Q    Send-Q              Local Address:Port         Peer Address:Port      
 0         0            *.*.*.*%enp0s3:bootpc       *.*.*.*:bootps
   ~~~
   
-5 Используя diagrams.net, создайте L3-диаграмму вашей домашней сети или любой другой сети, с которой вы работали.
+5 Используя diagrams.net, создайте L3-диаграмму вашей домашней сети или любой другой сети, с которой вы работали.  
+
+
+![net.png](https://github.com/015fanatik/devops-netology/blob/main/screenshots/net.png.jpg)
