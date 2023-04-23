@@ -1066,7 +1066,7 @@ Recv-Q    Send-Q              Local Address:Port         Peer Address:Port      
 
 
 
-# Домашнее задание к занятию «Использование Python для решения типовых DevOps-задач»
+# Использование Python для решения типовых DevOps-задач
 
 ### Цель задания
 
