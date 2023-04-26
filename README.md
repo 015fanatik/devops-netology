@@ -1162,9 +1162,7 @@ aleksandr@ubuntu-test:~/git$ ./1.py
 
 ### Вывод скрипта при запуске во время тестирования:
 
-```
-???
-```
+![script3.png](https://github.com/015fanatik/devops-netology/blob/main/screenshots/script3.png)
 
 ------
 
