@@ -1136,9 +1136,7 @@ for result in result_os.split('\n'):
 
 ### Ваш скрипт:
 
-```python
-???
-```
+![script1.png](https://github.com/015fanatik/devops-netology/blob/main/screenshots/script1.png)
 
 ### Вывод скрипта при запуске во время тестирования:
 
