@@ -1187,13 +1187,13 @@ answer = 'sdf'
 
 while 1==1:
  for i in hostlist:
- dns = i
- answer = socket.gethostbyname(i)
- time.sleep(1)
- print (hostlist)
-  if answer != hostlist[i]:
-   print (dns, 'ERROR',answer,'IP mismath',hostlist[i])
-   hostlist[i] = answer
+  dns = i
+  answer = socket.gethostbyname(i)
+  time.sleep(1)
+  print (hostlist)
+   if answer != hostlist[i]:
+    print (dns, 'ERROR',answer,'IP mismath',hostlist[i])
+    hostlist[i] = answer
 ```
 
 ### Вывод скрипта при запуске во время тестирования:
