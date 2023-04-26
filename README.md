@@ -1156,9 +1156,9 @@ aleksandr@ubuntu-test:~/git$ ./1.py
 
 ### Ваш скрипт:
 
-```python
-???
-```
+
+![script2.png](https://github.com/015fanatik/devops-netology/blob/main/screenshots/script2.png)
+
 
 ### Вывод скрипта при запуске во время тестирования:
 
