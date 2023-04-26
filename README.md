@@ -1156,7 +1156,7 @@ for result in result_os.split('\n'):
 
 ### Вывод скрипта при запуске во время тестирования:
 
-![script3.png](https://github.com/015fanatik/devops-netology/blob/main/screenshots/script3.png)
+![script2.1.png](https://github.com/015fanatik/devops-netology/blob/main/screenshots/script2.1.png)
 
 ------
 
