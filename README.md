@@ -1198,9 +1198,7 @@ while 1==1:
 
 ### Вывод скрипта при запуске во время тестирования:
 
-```
-???
-```
+![script3png](https://github.com/015fanatik/devops-netology/blob/main/screenshots/script3.png)
 
 ------
 
