@@ -1141,7 +1141,11 @@ for result in result_os.split('\n'):
 ### Вывод скрипта при запуске во время тестирования:
 
 ```
-???
+aleksandr@ubuntu-test:~/git$ ./1.py 
+        modified:   1.py
+        new file:   22
+        modified:   test
+        modified:   1.py
 ```
 
 ------
