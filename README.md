@@ -1136,17 +1136,11 @@ for result in result_os.split('\n'):
 
 ### Ваш скрипт:
 
-![scrin1.1.png](https://github.com/015fanatik/devops-netology/blob/main/screenshots/scrin1.1.png)
+![script1.png](https://github.com/015fanatik/devops-netology/blob/main/screenshots/script1.png)
 
 ### Вывод скрипта при запуске во время тестирования:
 
-```
-aleksandr@ubuntu-test:~/git$ ./1.py 
-        modified:   1.py
-        new file:   22
-        modified:   test
-        modified:   1.py
-```
+![script1.png](https://github.com/015fanatik/devops-netology/blob/main/screenshots/script1.png)
 
 ------
 
