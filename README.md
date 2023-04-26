@@ -1176,8 +1176,24 @@ for result in result_os.split('\n'):
 
 ### Ваш скрипт:
 
-```python
-???
+```
+#!/usr/bin/env python3
+
+import socket, time
+
+hostlist = {"drive.google.com":None, "mail.google.com":None, "google.com":None}
+dns = 'choeto'
+answer = 'sdf'
+
+while 1==1:
+ for i in hostlist:
+ dns = i
+ answer = socket.gethostbyname(i)
+ time.sleep(1)
+ print (hostlist)
+  if answer != hostlist[i]:
+   print (dns, 'ERROR',answer,'IP mismath',hostlist[i])
+   hostlist[i] = answer
 ```
 
 ### Вывод скрипта при запуске во время тестирования:
