@@ -59,7 +59,7 @@ do
         fi
 done
 
-amaksimov@deburunta:~$ ./1.sh
+vasilev@ubuntu:~$ ./1.sh
 curl: (7) Failed to connect to localhost port 4757: Connection refused
 значение равно 7
 
