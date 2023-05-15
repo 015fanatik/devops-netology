@@ -59,14 +59,9 @@ do
         fi
 done
 
-aleksandr@ubuntu:~$ ./1.sh
-curl: (7) Failed to connect to localhost port 4757: Connection refused
-значение равно 7
-
-
 
 ```
-
+![2.1sh.png](https://github.com/015fanatik/devops-netology/blob/main/screenshots/2.1sh.png)
 ---
 
 ## Задание 3
