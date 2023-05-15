@@ -46,7 +46,7 @@ done
 
 
 ```bash
-#!/bin/bash
+
 while ((1==1))
 do
         curl https://localhost:4757
