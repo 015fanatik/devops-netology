@@ -61,7 +61,6 @@ done
 
 
 ```
-![2.1sh.png](https://github.com/015fanatik/devops-netology/blob/main/screenshots/2.1sh.png)
 ---
 
 ## Задание 3
@@ -100,7 +99,7 @@ done
 
 
 ```
-screen
+![2.1sh.png](https://github.com/015fanatik/devops-netology/blob/main/screenshots/2.1sh.png)
 
 
 ---
