@@ -67,7 +67,7 @@ https://github.com/netology-code/virtd-homeworks/tree/main/05-virt-03-docker
 - шина данных на базе Apache Kafka;
 - виртуалка
 - Elasticsearch-кластер для реализации логирования продуктивного веб-приложения — три ноды elasticsearch, два logstash и две ноды kibana;
-- виртуалка
+- dpcker  так как виртуалки займут много ресурсов 
 - мониторинг-стек на базе Prometheus и Grafana;
 - виртуалка или docker
 - MongoDB как основное хранилище данных для Java-приложения;
