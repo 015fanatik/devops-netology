@@ -58,14 +58,22 @@ https://github.com/netology-code/virtd-homeworks/tree/main/05-virt-03-docker
 
 Сценарий:
 
-- высоконагруженное монолитное Java веб-приложение;
-- Nodejs веб-приложение;
+- высоконагруженное монолитное Java веб-приложение;  
+- виртуалка
+- Nodejs веб-приложение;  
+- docker
 - мобильное приложение c версиями для Android и iOS;
+- docker
 - шина данных на базе Apache Kafka;
+- виртуалка
 - Elasticsearch-кластер для реализации логирования продуктивного веб-приложения — три ноды elasticsearch, два logstash и две ноды kibana;
+- docker
 - мониторинг-стек на базе Prometheus и Grafana;
+- виртуалка или docker
 - MongoDB как основное хранилище данных для Java-приложения;
+- виртуалка
 - Gitlab-сервер для реализации CI/CD-процессов и приватный (закрытый) Docker Registry.
+- виртуалка
 
 ## Задача 3
 
