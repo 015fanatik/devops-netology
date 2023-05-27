@@ -83,6 +83,7 @@ https://github.com/netology-code/virtd-homeworks/tree/main/05-virt-03-docker
 - Добавьте ещё один файл в папку ```/data``` на хостовой машине.
 - Подключитесь во второй контейнер и отобразите листинг и содержание файлов в ```/data``` контейнера.
 
+![docker](https://github.com/015fanatik/devops-netology/blob/main/screenshots/docker.jpg)
 ## Задача 4 (*)
 
 Воспроизведите практическую часть лекции самостоятельно.
