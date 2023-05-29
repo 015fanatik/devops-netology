@@ -45,7 +45,7 @@ Hey, Netology
 
 Опубликуйте созданный fork в своём репозитории и предоставьте ответ в виде ссылки на https://hub.docker.com/username_repo.
 
-https://github.com/netology-code/virtd-homeworks/tree/main/05-virt-03-docker
+https://hub.docker.com/repository/docker/015fanatik/netology/general
 
 ## Задача 2
 
