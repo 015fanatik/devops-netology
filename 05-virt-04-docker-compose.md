@@ -65,6 +65,8 @@
   <img width="1200" height="600" src="./assets/yc_02.png">
 </p>
 
+![grafana](https://github.com/015fanatik/devops-netology/blob/main/screenshots/grafana.png)
+
 ## Задача 5 (*)
 
 Создайте вторую ВМ и подключите её к мониторингу, развёрнутому на первом сервере.
