@@ -65,7 +65,7 @@
   <img width="1200" height="600" src="./assets/yc_02.png">
 </p>
 
-![grafana](https://github.com/015fanatik/devops-netology/blob/main/screenshots/grafana.png)
+![grafana.png](https://github.com/015fanatik/devops-netology/blob/main/screenshots/grafana.png)
 
 ## Задача 5 (*)
 
