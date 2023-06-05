@@ -40,6 +40,9 @@
 docker node ls
 ```
 
+![docker_service](https://github.com/015fanatik/devops-netology/blob/main/screenshots/docker_service.png)
+![yc](https://github.com/015fanatik/devops-netology/blob/main/screenshots/yc.png)
+
 ## Задача 3
 
 Создайте ваш первый, готовый к боевой эксплуатации кластер мониторинга, состоящий из стека микросервисов.
@@ -48,6 +51,9 @@ docker node ls
 ```
 docker service ls
 ```
+
+![docker_service](https://github.com/015fanatik/devops-netology/blob/main/screenshots/docker_service.png)
+![yc](https://github.com/015fanatik/devops-netology/blob/main/screenshots/yc.png)
 
 ## Задача 4 (*)
 
