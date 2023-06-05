@@ -61,9 +61,7 @@
 Чтобы получить зачёт, предоставьте: 
 
 - скриншот работающего веб-интерфейса Grafana с текущими метриками, как на примере ниже.
-<p align="center">
-  <img width="1200" height="600" src="./assets/yc_02.png">
-</p>
+
 
 ![grafana.png](https://github.com/015fanatik/devops-netology/blob/main/screenshots/grafana.png)
 
