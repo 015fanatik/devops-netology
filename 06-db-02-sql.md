@@ -12,6 +12,26 @@
 
 Приведите получившуюся команду или docker-compose-манифест.
 
+'''
+ervices:
+  db:
+    container_name: postgres_demo
+    image: postgres:12.15
+    environment:
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: admin
+      PGDATA: /data/postgres
+    volumes:
+       - /data/postgres/db:/mount/postgres-db
+       - /data/postgres/backup:/mount/backup
+
+  adminer:
+   image: adminer
+   restart: always
+   ports:
+    - 8080:8080
+'''
+
 ## Задача 2
 
 В БД из задачи 1: 
