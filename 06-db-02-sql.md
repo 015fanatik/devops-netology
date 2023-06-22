@@ -12,7 +12,8 @@
 
 Приведите получившуюся команду или docker-compose-манифест.
 
-'''
+~~~
+yaml
 ervices:
   db:
     container_name: postgres_demo
@@ -30,7 +31,7 @@ ervices:
    restart: always
    ports:
     - 8080:8080
-'''
+~~~
 
 ## Задача 2
 
