@@ -12,8 +12,7 @@
 
 Приведите получившуюся команду или docker-compose-манифест.
 
-~~~
-Yaml
+~~~Yaml
 
 ervices:
   db:
