@@ -13,7 +13,8 @@
 Приведите получившуюся команду или docker-compose-манифест.
 
 ~~~
-yaml
+Yaml
+
 ervices:
   db:
     container_name: postgres_demo
