@@ -60,7 +60,9 @@ ervices:
 Приведите:
 
 - итоговый список БД после выполнения пунктов выше;
+  ![db_list.png](https://github.com/015fanatik/devops-netology/blob/main/screenshots/db_list.png)
 - описание таблиц (describe);
+  ![table_view.png](https://github.com/015fanatik/devops-netology/blob/main/screenshots/table_view.png)
 - SQL-запрос для выдачи списка пользователей с правами над таблицами test_db;
 ~~~
   SELECT * FROM information_schema.table_privileges WHERE grantee = 'username';
