@@ -65,10 +65,51 @@ ervices:
   ![table_view.png](https://github.com/015fanatik/devops-netology/blob/main/screenshots/table_view.png)
 - SQL-запрос для выдачи списка пользователей с правами над таблицами test_db;
 ~~~
-  SELECT * FROM information_schema.table_privileges WHERE grantee = 'username';
-~~~ 
+  test_db=# SELECT table_name,grantee,privilege_type 
+FROM information_schema.table_privileges
+WHERE table_schema NOT IN ('information_schema','pg_catalog');
+~~~
 - список пользователей с правами над таблицами test_db.
-
+~~~
+table_name |     grantee      | privilege_type 
+------------+------------------+----------------
+ orders     | admin            | INSERT
+ orders     | admin            | SELECT
+ orders     | admin            | UPDATE
+ orders     | admin            | DELETE
+ orders     | admin            | TRUNCATE
+ orders     | admin            | REFERENCES
+ orders     | admin            | TRIGGER
+ clients    | admin            | INSERT
+ clients    | admin            | SELECT
+ clients    | admin            | UPDATE
+ clients    | admin            | DELETE
+ clients    | admin            | TRUNCATE
+ clients    | admin            | REFERENCES
+ clients    | admin            | TRIGGER
+ orders     | test-admin-user  | INSERT
+ orders     | test-admin-user  | SELECT
+ orders     | test-admin-user  | UPDATE
+ orders     | test-admin-user  | DELETE
+ orders     | test-admin-user  | TRUNCATE
+ orders     | test-admin-user  | REFERENCES
+ orders     | test-admin-user  | TRIGGER
+ clients    | test-admin-user  | INSERT
+ clients    | test-admin-user  | SELECT
+ clients    | test-admin-user  | UPDATE
+ clients    | test-admin-user  | DELETE
+ clients    | test-admin-user  | TRUNCATE
+ clients    | test-admin-user  | REFERENCES
+ clients    | test-admin-user  | TRIGGER
+ orders     | test-simple-user | INSERT
+ orders     | test-simple-user | SELECT
+ orders     | test-simple-user | UPDATE
+ orders     | test-simple-user | DELETE
+ clients    | test-simple-user | INSERT
+ clients    | test-simple-user | SELECT
+ clients    | test-simple-user | UPDATE
+ clients    | test-simple-user | DELETE
+~~~
 ## Задача 3
 
 Используя SQL-синтаксис, наполните таблицы следующими тестовыми данными:
