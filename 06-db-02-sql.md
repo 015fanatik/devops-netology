@@ -22,6 +22,7 @@ ervices:
       POSTGRES_USER: admin
       POSTGRES_PASSWORD: admin
       PGDATA: /data/postgres
+      restart: always
     volumes:
        - /data/postgres/db:/mount/postgres-db
        - /data/postgres/backup:/mount/backup
