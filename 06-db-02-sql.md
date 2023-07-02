@@ -63,7 +63,7 @@ ervices:
 - описание таблиц (describe);
 - SQL-запрос для выдачи списка пользователей с правами над таблицами test_db;
 ~~~
-  SELECT * FROM information_schema.table_privileges WHERE grantee = 'username' LIMIT 10;
+  SELECT * FROM information_schema.table_privileges WHERE grantee = 'username';
 ~~~ 
 - список пользователей с правами над таблицами test_db.
 
