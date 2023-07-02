@@ -62,9 +62,9 @@ ervices:
 - итоговый список БД после выполнения пунктов выше;
 - описание таблиц (describe);
 - SQL-запрос для выдачи списка пользователей с правами над таблицами test_db;
-"""
+'''
   SELECT * FROM information_schema.table_privileges WHERE grantee = 'username' LIMIT 10;
-"""  
+'''  
 - список пользователей с правами над таблицами test_db.
 
 ## Задача 3
