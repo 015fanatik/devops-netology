@@ -21,7 +21,7 @@ ervices:
     environment:
       POSTGRES_USER: admin
       POSTGRES_PASSWORD: admin
-      PGDATA: /data/postgres
+      PGDATA: mount/postgres-db
       restart: always
     volumes:
        - /data/postgres/db:/mount/postgres-db
