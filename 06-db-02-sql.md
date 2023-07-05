@@ -156,6 +156,8 @@ table_name |     grantee      | privilege_type
 
 Приведите SQL-запросы для выполнения этих операций.
 
+![zakaz.png](https://github.com/015fanatik/devops-netology/blob/main/screenshots/zakaz.png)
+
 Приведите SQL-запрос для выдачи всех пользователей, которые совершили заказ, а также вывод этого запроса.
  
 Подсказка: используйте директиву `UPDATE`.
