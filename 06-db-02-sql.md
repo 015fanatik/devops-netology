@@ -194,6 +194,17 @@ width - это оценка PostgreSQL того, сколько, в средне
 
 Приведите список операций, который вы применяли для бэкапа данных и восстановления. 
 
+
+~~~
+Бекап
+pg_restore -U admin -C  -d test_db < /mount/backup/test_db.bak
+
+Рестор
+psql -U admin 
+create database test_db;
+exit
+psql -U admin -d test_db  < /mount/backup/test_db.bak
+~~~
 ---
 
 ### Как cдавать задание
