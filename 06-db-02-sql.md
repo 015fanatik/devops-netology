@@ -159,6 +159,8 @@ table_name |     grantee      | privilege_type
 ![zakaz.png](https://github.com/015fanatik/devops-netology/blob/main/screenshots/zakaz.png)
 
 Приведите SQL-запрос для выдачи всех пользователей, которые совершили заказ, а также вывод этого запроса.
+
+![users_zakaz.png](https://github.com/015fanatik/devops-netology/blob/main/screenshots/users_zakaz.png)
  
 Подсказка: используйте директиву `UPDATE`.
 
