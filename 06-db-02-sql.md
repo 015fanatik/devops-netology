@@ -141,7 +141,7 @@ table_name |     grantee      | privilege_type
 
     - запросы,
     - результаты их выполнения.
-
+![count.png](https://github.com/015fanatik/devops-netology/blob/main/screenshots/count.png)
 ## Задача 4
 
 Часть пользователей из таблицы clients решили оформить заказы из таблицы orders.
