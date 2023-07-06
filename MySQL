@@ -132,10 +132,7 @@ mysql> SHOW PROFILES;
 +----------+------------+-------------------------------------------------------------------------------------------------------------------+
 12 rows in set, 1 warning (0.00 sec)
 ~~~
-~~~
-ALTER TABLE test_db.orders ENGINE=MyISAM;
-ALTER TABLE test_db.orders ENGINE=InnoDB;
-~~~
+
 
 ## Задача 4 
 
