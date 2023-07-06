@@ -76,8 +76,62 @@ mysql> SELECT ENGINE FROM information_schema.TABLES WHERE table_schema = 'test_d
 
 Измените `engine` и **приведите время выполнения и запрос на изменения из профайлера в ответе**:
 - на `MyISAM`,
-- на `InnoDB`.  
+~~~
+mysql> ALTER TABLE test_db.orders ENGINE=MyISAM;
+Query OK, 5 rows affected (0.14 sec)
+Records: 5  Duplicates: 0  Warnings: 0
 
+mysql> SHOW PROFILES;
++----------+------------+-------------------------------------------------------------------------------------------------------------------+
+| Query_ID | Duration   | Query                                                                                                             |
++----------+------------+-------------------------------------------------------------------------------------------------------------------+
+|        1 | 0.00738725 | SHOW ENGINES                                                                                                      |
+|        2 | 0.00094525 | SELECT * FROM INFORMATION_SCHEMA.ENGINES                                                                          |
+|        3 | 0.00545125 | SELECT TABLE_NAME, ENGINE
+  FROM information_schema.TABLES
+ WHERE TABLE_SCHEMA = test_db AND ENGINE IS NOT NULL   |
+|        4 | 0.00451625 | SELECT TABLE_NAME, ENGINE
+  FROM information_schema.TABLES
+ WHERE TABLE_SCHEMA = 'test_db' AND ENGINE IS NOT NULL |
+|        5 | 0.00126450 | SELECT ENGINE FROM information_schema.TABLES WHERE table_schema = test_db                                         |
+|        6 | 0.00178350 | SELECT ENGINE FROM information_schema.TABLES WHERE table_schema = 'test_db'                                       |
+|        7 | 0.17445850 | ALTER TABLE test_db.orders ENGINE=MyISAM                                                                          |
+|        8 | 0.16757400 | ALTER TABLE test_db.orders ENGINE=InnoDB                                                                          |
+|        9 | 0.22012650 | ALTER TABLE test_db.orders ENGINE=MyISAM                                                                          |
+|       10 | 0.00045250 | SHOW PROFILER                                                                                                     |
+|       11 | 0.13781100 | ALTER TABLE test_db.orders ENGINE=MyISAM                                                                          |
++----------+------------+-------------------------------------------------------------------------------------------------------------------+
+11 rows in set, 1 warning (0.00 sec)
+~~~
+- на `InnoDB`.  
+~~~
+mysql> ALTER TABLE test_db.orders ENGINE=InnoDB;
+Query OK, 5 rows affected (0.19 sec)
+Records: 5  Duplicates: 0  Warnings: 0
+
+mysql> SHOW PROFILES;
++----------+------------+-------------------------------------------------------------------------------------------------------------------+
+| Query_ID | Duration   | Query                                                                                                             |
++----------+------------+-------------------------------------------------------------------------------------------------------------------+
+|        1 | 0.00738725 | SHOW ENGINES                                                                                                      |
+|        2 | 0.00094525 | SELECT * FROM INFORMATION_SCHEMA.ENGINES                                                                          |
+|        3 | 0.00545125 | SELECT TABLE_NAME, ENGINE
+  FROM information_schema.TABLES
+ WHERE TABLE_SCHEMA = test_db AND ENGINE IS NOT NULL   |
+|        4 | 0.00451625 | SELECT TABLE_NAME, ENGINE
+  FROM information_schema.TABLES
+ WHERE TABLE_SCHEMA = 'test_db' AND ENGINE IS NOT NULL |
+|        5 | 0.00126450 | SELECT ENGINE FROM information_schema.TABLES WHERE table_schema = test_db                                         |
+|        6 | 0.00178350 | SELECT ENGINE FROM information_schema.TABLES WHERE table_schema = 'test_db'                                       |
+|        7 | 0.17445850 | ALTER TABLE test_db.orders ENGINE=MyISAM                                                                          |
+|        8 | 0.16757400 | ALTER TABLE test_db.orders ENGINE=InnoDB                                                                          |
+|        9 | 0.22012650 | ALTER TABLE test_db.orders ENGINE=MyISAM                                                                          |
+|       10 | 0.00045250 | SHOW PROFILER                                                                                                     |
+|       11 | 0.13781100 | ALTER TABLE test_db.orders ENGINE=MyISAM                                                                          |
+|       12 | 0.18515300 | ALTER TABLE test_db.orders ENGINE=InnoDB                                                                          |
++----------+------------+-------------------------------------------------------------------------------------------------------------------+
+12 rows in set, 1 warning (0.00 sec)
+~~~
 ~~~
 ALTER TABLE test_db.orders ENGINE=MyISAM;
 ALTER TABLE test_db.orders ENGINE=InnoDB;
