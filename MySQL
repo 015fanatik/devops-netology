@@ -163,6 +163,8 @@ key_buffer_size = 2448М
 max_binlog_size	= 100M
 ~~~
 
+
+http://www.mysql.ru/docs/man/InnoDB_start.html
 ---
 
 ### Как оформить ДЗ
