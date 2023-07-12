@@ -110,6 +110,15 @@ pg_dump -U admin test_database > /mount/backup/test_database.bak
 
 ---
 
+Отредактировать файл бекапа добавив UNIQUE.
+
+~~~
+CREATE TABLE public.orders (
+    id integer  NOT NULL,
+    title character varying(80) UNIQUE NOT NULL,
+    price integer DEFAULT 0
+~~~
+
 ### Как cдавать задание
 
 Выполненное домашнее задание пришлите ссылкой на .md-файл в вашем репозитории.
