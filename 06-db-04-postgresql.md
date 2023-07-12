@@ -63,6 +63,7 @@ psql -U admin -W test_database < /mount/backup/test_dump.sql;
 Используя таблицу [pg_stats](https://postgrespro.ru/docs/postgresql/12/view-pg-stats), найдите столбец таблицы `orders` 
 с наибольшим средним значением размера элементов в байтах.  
 
+~~~
 test_database=# SELECT avg_width,attname FROM pg_stats WHERE tablename='orders' ORDER BY attname DESC;
  avg_width | attname 
 -----------+---------
@@ -70,6 +71,7 @@ test_database=# SELECT avg_width,attname FROM pg_stats WHERE tablename='orders' 
          4 | price
          4 | id
 (3 rows)
+~~~
 
 **Приведите в ответе** команду, которую вы использовали для вычисления, и полученный результат.
 
