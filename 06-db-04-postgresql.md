@@ -84,12 +84,12 @@ test_database=# SELECT avg_width,attname FROM pg_stats WHERE tablename='orders' 
 Предложите SQL-транзакцию для проведения этой операции.
 
 ~~~
-CREATE TABLE orders_1 (CHECK (price < 499)) INHERITS (orders);
-CREATE TABLE orders_2 (CHECK (price >= 499)) INHERITS (orders);
-INSERT INTO orders_1 SELECT * FROM orders WHERE price < 499;
-DELETE FROM only orders WHERE price < 499;
-INSERT INTO orders_2 SELECT * FROM orders WHERE price >= 499;
-DELETE FROM only orders WHERE price >= 499;
+CREATE TABLE orders_1 (CHECK (price > 499)) INHERITS (orders);
+CREATE TABLE orders_2 (CHECK (price <= 499)) INHERITS (orders);
+INSERT INTO orders_1 SELECT * FROM orders WHERE price > 499;
+DELETE FROM only orders WHERE price > 499;
+INSERT INTO orders_2 SELECT * FROM orders WHERE price <= 499;
+DELETE FROM only orders WHERE price <= 499;
 ~~~
 
 Можно ли было изначально исключить ручное разбиение при проектировании таблицы orders?
