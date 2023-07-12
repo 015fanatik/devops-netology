@@ -103,6 +103,9 @@ DELETE FROM only orders WHERE price <= 499;
 
 Используя утилиту `pg_dump`, создайте бекап БД `test_database`.
 
+
+pg_dump -U admin test_database > /mount/backup/test_database.bak
+
 Как бы вы доработали бэкап-файл, чтобы добавить уникальность значения столбца `title` для таблиц `test_database`?
 
 ---
