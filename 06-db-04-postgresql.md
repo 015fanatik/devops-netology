@@ -36,11 +36,19 @@
 
 ## Задача 2
 
-Используя `psql`, создайте БД `test_database`.
+Используя `psql`, создайте БД `test_database`.  
+
+
+create database test_database;
+
 
 Изучите [бэкап БД](https://github.com/netology-code/virt-homeworks/tree/virt-11/06-db-04-postgresql/test_data).
 
 Восстановите бэкап БД в `test_database`.
+
+
+psql -U admin -W test_database < /mount/backup/test_dump.sql;  
+
 
 Перейдите в управляющую консоль `psql` внутри контейнера.
 
