@@ -11,29 +11,28 @@
 **Найдите и приведите** управляющие команды для:
 
 - вывода списка БД,
-  
+  ~~~
   \l+
-  
+  ~~~
 - подключения к БД,
-  
+  ~~~
   \c[onnect] {[DBNAME|- USER|- HOST|- PORT|-] | conninfo}
                          connect to new database (currently "admin")
-    
-  SELECT * from pg_stat_activity;
+   ~~~ 
 
 - вывода списка таблиц,
-  
+~~~
   \d[S+] list tables, views, and sequences или
 \dt[S+] [PATTERN] list tables
-
+~~~
 - вывода описания содержимого таблиц,
-  
+ ~~~ 
   \dS+ или \dtS+
-  
+ ~~~
 - выхода из psql.
-  
+~~~
   \q
-
+~~~
 ## Задача 2
 
 Используя `psql`, создайте БД `test_database`.  
