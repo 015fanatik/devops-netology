@@ -16,10 +16,10 @@
   
 - подключения к БД,
   
-\c[onnect] {[DBNAME|- USER|- HOST|- PORT|-] | conninfo}
+  \c[onnect] {[DBNAME|- USER|- HOST|- PORT|-] | conninfo}
                          connect to new database (currently "admin")
     
-SELECT * from pg_stat_activity;
+  SELECT * from pg_stat_activity;
 
 - вывода списка таблиц,
   
