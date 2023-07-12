@@ -37,26 +37,30 @@
 
 Используя `psql`, создайте БД `test_database`.  
 
-
+~~~
 create database test_database;
-
+~~~
 
 Изучите [бэкап БД](https://github.com/netology-code/virt-homeworks/tree/virt-11/06-db-04-postgresql/test_data).
 
 Восстановите бэкап БД в `test_database`.
 
-
+~~~
 psql -U admin -W test_database < /mount/backup/test_dump.sql;  
-
+~~~
 
 Перейдите в управляющую консоль `psql` внутри контейнера.
 
 Подключитесь к восстановленной БД и проведите операцию ANALYZE для сбора статистики по таблице.
-
+~~~
  \c test_database  
+~~~
 
- ANALYZE VERBOSE orders;
-
+~~~
+test_database=# ANALYZE VERBOSE orders;
+INFO:  analyzing "public.orders"
+INFO:  "orders": scanned 1 of 1 pages, containing 8 live rows and 0 dead rows; 8 rows in sample, 8 estimated total rows
+~~~
 
 
 Используя таблицу [pg_stats](https://postgrespro.ru/docs/postgresql/12/view-pg-stats), найдите столбец таблицы `orders` 
@@ -102,8 +106,9 @@ DELETE FROM only orders WHERE price <= 499;
 
 Используя утилиту `pg_dump`, создайте бекап БД `test_database`.
 
-
+~~~
 pg_dump -U admin test_database > /mount/backup/test_database.bak
+~~~
 
 Как бы вы доработали бэкап-файл, чтобы добавить уникальность значения столбца `title` для таблиц `test_database`?
 
