@@ -54,6 +54,12 @@ psql -U admin -W test_database < /mount/backup/test_dump.sql;
 
 Подключитесь к восстановленной БД и проведите операцию ANALYZE для сбора статистики по таблице.
 
+ \c test_database  
+
+ ANALYZE VERBOSE orders;
+
+
+
 Используя таблицу [pg_stats](https://postgrespro.ru/docs/postgresql/12/view-pg-stats), найдите столбец таблицы `orders` 
 с наибольшим средним значением размера элементов в байтах.
 
