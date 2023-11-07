@@ -31,14 +31,33 @@ variable "vpc_name" {
   description = "VPC network&subnet name"
 }
 
-
-variable "image" {
+variable "vm_web_family" {
   type        = string
-  default     = "fd8clogg1kull9084s9o"
-  description = "Ubuntu image id"
+  default     = "ubuntu-2004-lts"
+  description = "example"
+}
+
+variable "vm_web_platform_id" {
+  type        = string
+  default     = "standard-v3"
+  description = "example"
+}
+
+variable "vm_web_resources" {
+type = map(string)
+default = {vm_cores = "2",vm_memory = "2",vm_core_fraction = "20"}
+}
+
+variable "metadata" {
+type = map(string)
+default = {serial-port-enable = "1",ssh-keys = "ubuntu:ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDNh/nXQX6S4PPWRSVMxjwwrBlZf0Sa73tF0ieak9BQX2a6cJV1Dvi9mexxd7OWXEFpa/TU9rK/CUIus/zTkDU1B+FO9rT7MzqSckUOWnrpaatNYLynUFOrnPcOw+13w6Km1Yh1LPnvvt7qOWloI6MNRRUFJ+qM9yztD6CxqsFt4BN2hc18Xz0EFH4dByHXLLqXHALkCmt6GU8inQyd8g9xzpQCQt1bcI8LQe41y8d10lRgUItY/7mcyEGdX4d1l/v1NdwDBiuRyWw65HSuLXqr1xxqMIAnVow7F0QxqsTjzXFEq8Fg9xci9HJClGVSPcG7Ph2DVuTIdjVk8O42HF8TVt8Yc14WEmVmbI+OzeY2csbqOwm47qSv1mVXuEFpPHN440au1aalyqMy9Wj4h6QaqvO6eOeRlnCs01WZYbQlRmt9XGfGriA/T5oK0+P8iiKthKhOpll9VyHQEwTZcRxq76KbdcWEqjPy4eC1uSXCh2wBt1fq0Ebcq4Aclq4ySqE="}
 }
 
 
+#variable "metadata" {
+#type = map(string)
+#default = {serial-port-enable = "1",ssh-keys = "ubuntu:ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIIPcXa1t17x3Ri1gCk9/Qn3InHu+hhQWmixT16Eg+RqI"}
+#}
 
 
 
@@ -46,35 +65,20 @@ variable "image" {
 
 
 
-
-
-# variables ssh 
-
-variable "ssh-key" {
- type = map(string)
- default = {
- key = "ubuntu:ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIAmHkgchb0/TZXuXMl2y18SxbFULIDdIneX/TB1trbNv"
- port = "1"
- }
-}
-
-
-
-
-# locals
-
-
-
-variable "hosts" {
-  type = list(object({
- name=string,
- cpu=number,
- ram=number, 
- disk=number 
-}))
-
+variable "virtual" {
+    type = list(object({
+    vm_name = string
+    cpu  = number
+    ram  = number
+    disk = number
+  }))
   default = [
-    { name="main", cpu=2, ram=4, disk=15 },
-    { name="replica", cpu=4, ram=8, disk=10 },
+    { vm_name = "main", cpu = 4, ram = 4, disk = 20 },
+    { vm_name = "replica", cpu = 2, ram = 2, disk = 10 },
   ]
- }
+}
+
+variable "disk_count" {
+    type = list
+  default = [0,1,2]
+}
